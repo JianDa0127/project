@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="path/to/style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <title>主頁</title>
+
+  <style>
+
+
+    body {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: 100px 1fr 100px 100px;
+      grid-auto-flow: row;
+      grid-gap: 5px;
+      height: 100 vh;
+      background: floralwhite;
+    }
+
+    .table {
+      grid-area: 4/3/6/11;
+      text-align: center;
+    }
+
+    .table_items {
+      font-family: 'Times New Roman', Times, serif;
+    }
+  </style>
+</head>
+
+<body>
+
+ 
+
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">目前排名</th>
+          <th scope="col">球隊名稱</th>
+          <th scope="col">Win - Lose</th>
+          <th scope="col">下場對決</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td class="table_items"><a href="index.html">LOS ANGELES LAKERS</a></td>
+          <td class="table_items">52 - 19</td>
+          <td class="table_items">@NULL</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td class="table_items">HOUSTON ROCKETS</td>
+          <td class="table_items">44 - 28</td>
+          <td class="table_items">@NULL</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td class="table_items">MIAMI HEAT</td>
+          <td class="table_items">44 - 29</td>
+          <td class="table_items">@NULL</td>
+        </tr>
+      </tbody>
+    </table>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
+    integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYtMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+    integrity="sha512-rmZcZsyhe0/MAjquhTgiUcb4d9knaFc7b5xAfju483gbEXTkeJRUMIPk6s3ySZMYUHEcjKbjLjyddGWMrNEvZg=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/locale/zh-tw.min.js"
+    integrity="sha512-teZ6dd0iHPCs4aUqFGC1OSUiT+pY6eqk5Jaa2sE7wqExKu3Tscsn1RYbEJWPWsqKYroeJ6jlkR2YdY3Em8eVRQ=="
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
