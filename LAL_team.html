@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link>
+    <link rel="icon" href="teamlogo/Los Angeles Lakers.png" sizes=auto>
     <title>LAL湖人</title>
     <style>
         #playerTable{moz-user-select: -moz-none;-moz-user-select: none;-o-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;width: 100%;text-align: center;margin:15px 0;}
         #playerTable th{cursor: pointer; background: #eee}
         #playerTable tr:nth-child(even){background: #f9f9f9}
         #playerTable th,#playerTable td{padding: 10px; border:1px solid #ccc;}
-        </style>
+    </style>
 </head>
     
 <body>
@@ -18,7 +20,7 @@
     <table id="playerTable" class="tablesorter">
         <thead align="center">
             <tr>
-                <th title="球員">Players</th>
+                <th title="球員" data-type="string">Players</th>
                 <th title="比賽場數" data-type="num">G</th>
                 <th title="場均時間" data-type="num">MPG</th>
                 <th title="投籃命中率" data-type="num">FG%</th>
@@ -301,7 +303,7 @@
             return a.localeCompare(b);
             break;
         default:
-            return new Date(a.split('-').join('/')).getTime()-new Date(b.split('-').join('/')).getTime();
+            return 0;
         };
     };
     })();
