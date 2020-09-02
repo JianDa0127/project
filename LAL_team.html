@@ -7,35 +7,61 @@
     <link>
     <link rel="icon" href="teamlogo/Los Angeles Lakers.png" sizes=auto>
     <title>LAL湖人</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <style>
-        #playerTable{moz-user-select: -moz-none;-moz-user-select: none;-o-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;width: 100%;text-align: center;margin:15px 0;}
-        #playerTable th{cursor: pointer; background: #eee}
-        #playerTable tr:nth-child(even){background: #f9f9f9}
-        #playerTable th,#playerTable td{padding: 10px; border:1px solid #ccc;}
+        #playerTable{
+            text-align: center;
+        }
+
+        .table-active{
+            background-color:rgb(238, 185, 116);
+            text-align: center;
+            color:rgba(120, 48, 187, 0.822);
+        }
+        #Players{
+            text-align:left;
+        }
+        .table td, .table th {
+            vertical-align: middle;
+        }
     </style>
 </head>
     
 <body>
-    <h1 align="center">Los Angeles Lakers Players </h1>
-    <table id="playerTable" class="tablesorter">
-        <thead align="center">
-            <tr>
-                <th title="球員" data-type="string">Players</th>
-                <th title="比賽場數" data-type="num">G</th>
-                <th title="場均時間" data-type="num">MPG</th>
-                <th title="投籃命中率" data-type="num">FG%</th>
-                <th title="三分線命中率" data-type="num">3P%</th>
-                <th title="罰球率" data-type="num">FT%</th>
-                <th title="平均得分" data-type="num">PPG</th>
-                <th title="平均籃板" data-type="num">RPG</th>
-                <th title="平均助攻" data-type="num">APG</th>
-                <th title="抄截/場" data-type="num">SPG</th>
-                <th title="阻攻/場" data-type="num">BPG</th>
+    <div class='h1'>
+        <div class="d-flex justify-content-around">
+            <a href="MIL_team.html" class="btn btn-light" role="button" aria-pressed="true"><i class="fas fa-angle-left"></i></a>
+            <span><img src="teamlogo/Los Angeles Lakers.png" >Los Angeles Lakers Players </span>
+            <a href="MIL_team.html" class="btn btn-light" role="button" aria-pressed="true"><i class="fas fa-angle-right"></i></a>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
+      
+    <table id="playerTable" class="table table-hover">
+        <thead>
+            <tr >
+                <th data-type="num" class="table-active">#</th>
+                <th title="球員" data-type="string" class="table-active">Players</th>
+                <th title="比賽場數" data-type="num" class="table-active">G</th>
+                <th title="場均時間" data-type="num" class="table-active">MPG</th>
+                <th title="投籃命中率" data-type="num" class="table-active">FG%</th>
+                <th title="三分線命中率" data-type="num" class="table-active">3P%</th>
+                <th title="罰球率" data-type="num" class="table-active">FT%</th>
+                <th title="平均得分" data-type="num" class="table-active">PPG</th>
+                <th title="平均籃板" data-type="num" class="table-active">RPG</th>
+                <th title="平均助攻" data-type="num" class="table-active">APG</th>
+                <th title="抄截/場" data-type="num" class="table-active">SPG</th>
+                <th title="阻攻/場" data-type="num" class="table-active">BPG</th>
             </tr>
         </thead>
-        <tbody align="center">
+        <tbody>
             <tr>
-                <td align="left"><img src='LAL_Team/Kyle Kuzma.png'>Kyle Kuzma</td>
+                <td class="table-secondary">1</td>
+                <td id='Players'><img src='LAL_Team/Kyle Kuzma.png' width="100">Kyle Kuzma</td>
                 <td>3</td>
                 <td>24.7</td>
                 <td>34.6</td>
@@ -48,7 +74,8 @@
                 <td>0.3</td>
             </tr>
             <tr>
-                <td align="left"><img src='LAL_Team/Kentavious Caldwell-Pope.png'>Kentavious Caldwell-Pope</td>
+                <td class="table-secondary">2</td>
+                <td id='Players'  id='Players'><img src='LAL_Team/Kentavious Caldwell-Pope.png' width="100">Kentavious Caldwell-Pope</td>
                 <td>3</td>
                 <td>26.3</td>
                 <td>30.0</td>
@@ -61,7 +88,8 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <td align="left"><img src='LAL_Team/Anthony Davis.png'>Anthony Davis</td>
+                <td class="table-secondary">3</td>
+                <td id='Players' id='Players'><img src='LAL_Team/Anthony Davis.png' width="100">Anthony Davis</td>
                 <td>3</td>
                 <td>36.3</td>
                 <td>50.8</td>
@@ -74,7 +102,8 @@
                 <td>2.0</td>
             </tr>
             <tr>
-                <td align="left"><img src='LAL_Team/Alex Caruso.png'>Alex Caruso</td>
+                <td class="table-secondary">4</td>
+                <td id='Players'><img src='LAL_Team/Alex Caruso.png' width="100">Alex Caruso</td>
                 <td>3</td>
                 <td>24.3</td>
                 <td>33.3</td>
@@ -87,7 +116,8 @@
                 <td>0.3</td>
             </tr>
             <tr>
-                <td align="left"><img src='LAL_Team/Talen Horton-Tucker.png'>Talen Horton-Tucker</td>
+                <td class="table-secondary">5</td>
+                <td id='Players'><img src='LAL_Team/Talen Horton-Tucker.png' width="100">Talen Horton-Tucker</td>
                 <td>0</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -100,7 +130,8 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <td align="left"><img src='LAL_Team/JaVale McGee.png'>JaVale McGee</td>
+                <td class="table-secondary">6</td>
+                <td id='Players'><img src='LAL_Team/JaVale McGee.png' width="100">JaVale McGee</td>
                 <td>3</td>
                 <td>13.3</td>
                 <td>76.9</td>
@@ -113,7 +144,8 @@
                 <td>0.7</td>
             </tr>
             <tr>
-                <td align="left"><img src='LAL_Team/Rajon Rondo.png'>Rajon Rondo</td>
+                <td class="table-secondary">7</td>
+                <td id='Players'><img src='LAL_Team/Rajon Rondo.png' width="100">Rajon Rondo</td>
                 <td>0</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -126,7 +158,8 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <td align="left"><img src='LAL_Team/Jared Dudley.png'>Jared Dudley</td>
+                <td class="table-secondary">8</td>
+                <td id='Players'><img src='LAL_Team/Jared Dudley.png' width="100">Jared Dudley</td>
                 <td>1</td>
                 <td>8.0</td>
                 <td>0.0</td>
@@ -139,7 +172,8 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <td align="left"><img src='LAL_Team/Avery Bradley.png'>Avery Bradley</td>
+                <td class="table-secondary">9</td>
+                <td id='Players'><img src='LAL_Team/Avery Bradley.png' width="100">Avery Bradley</td>
                 <td>0</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -152,7 +186,8 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <td align="left"><img src='LAL_Team/Devontae Cacok.png'>Devontae Cacok</td>
+                <td class="table-secondary">10</td>
+                <td id='Players'><img src='LAL_Team/Devontae Cacok.png' width="100">Devontae Cacok</td>
                 <td>0</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -165,7 +200,8 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <td align="left"><img src='LAL_Team/Danny Green.png'>Danny Green</td>
+                <td class="table-secondary">11</td>
+                <td id='Players'><img src='LAL_Team/Danny Green.png' width="100">Danny Green</td>
                 <td>3</td>
                 <td>25.7</td>
                 <td>30.8</td>
@@ -178,7 +214,8 @@
                 <td>0.7</td>
             </tr>
             <tr>
-                <td align="left"><img src='LAL_Team/Dion Waiters.png'>Dion Waiters</td>
+                <td class="table-secondary">12</td>
+                <td id='Players'><img src='LAL_Team/Dion Waiters.png' width="100">Dion Waiters</td>
                 <td>2</td>
                 <td>8.0</td>
                 <td>66.7</td>
@@ -191,7 +228,8 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <td align="left"><img src='LAL_Team/J.R. Smith.png'>JR Smith</td>
+                <td class="table-secondary">13</td>
+                <td id='Players'><img src='LAL_Team/J.R. Smith.png' width="100">JR Smith</td>
                 <td>2</td>
                 <td>15.0</td>
                 <td>26.7</td>
@@ -204,7 +242,8 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <td align="left"><img src='LAL_Team/LeBron James.png'>LeBron James</td>
+                <td class="table-secondary">14</td>
+                <td id='Players'><img src='LAL_Team/LeBron James.png' width="100">LeBron James</td>
                 <td>3</td>
                 <td>34.0</td>
                 <td>49.0</td>
@@ -217,7 +256,8 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <td align="left"><img src='LAL_Team/Quinn Cook.png'>Quinn Cook</td>
+                <td class="table-secondary">15</td>
+                <td id='Players'><img src='LAL_Team/Quinn Cook.png' width="100">Quinn Cook</td>
                 <td>1</td>
                 <td>8.0</td>
                 <td>66.7</td>
@@ -230,7 +270,8 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <td align="left"><img src='LAL_Team/Kostas Antetokounmpo.png'>Kostas Antetokounmpo</td>
+                <td class="table-secondary">16</td>
+                <td id='Players'><img src='LAL_Team/Kostas Antetokounmpo.png' width="100">Kostas Antetokounmpo</td>
                 <td>0</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -243,7 +284,8 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <td align="left"><img src='LAL_Team/Dwight Howard.png'>Dwight Howard</td>
+                <td class="table-secondary">17</td>
+                <td id='Players'><img src='LAL_Team/Dwight Howard.png' width="100">Dwight Howard</td>
                 <td>3</td>
                 <td>17.0</td>
                 <td>61.5</td>
@@ -256,7 +298,8 @@
                 <td>0.3</td>
             </tr>
             <tr>
-                <td align="left"><img src='LAL_Team/Markieff Morris.png'>Markieff Morris</td>
+                <td class="table-secondary">18</td>
+                <td id='Players'><img src='LAL_Team/Markieff Morris.png' width="100">Markieff Morris</td>
                 <td>3</td>
                 <td>17.7</td>
                 <td>44.4</td>
@@ -303,7 +346,7 @@
             return a.localeCompare(b);
             break;
         default:
-            return 0;
+            break;
         };
     };
     })();
